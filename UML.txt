@@ -1,0 +1,63 @@
+Punto:
++ nombre: String
++ nombre2: String
++ este_WGS84: Number
++ norte_WGS84: Number
++ cota: Number
++ fuente_coord: String
++ fuente_cota: String
++ tipo: Tipo[1]
++ sector: Sector[1]
++ subsector: Subsector[1]
+--------------------
++ __str__: String
+
+Tipo:
++ nombre: String
+--------------------
++ __str__: String
+
+Sector:
++ nombre: String
+--------------------
++ __str__: String
+
+Subsector:
++ nombre: String
++ sector: Sector[1]
+--------------------
++ __str__: String
+
+Nivel:
++ nombre: Punto[1]
++ fecha: DateField
++ nivel_msnm: Number
+--------------------
++ __str__: String
+
+Caudal:
++ nombre: Punto[1]
++ fecha: DateField
++ caudal: Number
+--------------------
++ __str__: String
+
+Calidad:
++ nombre: Punto[1]
++ fecha: DateField
++ parametro: Parametro[1]
++ unidad: Unidad[1]
++ valor: Number
+--------------------
++ __str__: String
+
+Parametro:
++ nombre: String
+--------------------
++ __str__: String
+
+Unidad:
++ nombre: String
+--------------------
++ __str__: String
+
